@@ -40,6 +40,7 @@ font-style: normal;
   width: 35px;
   height: 35px;
   margin-left: 4%;
+  z-index: 11;
 }
 
 header{
@@ -208,6 +209,7 @@ img{
   margin: 0;
   padding: 0;
   width: 100%;
+  z-index: 0;
 }
 
 .logo{
@@ -222,6 +224,7 @@ img{
 
 #Page_2 h1{
   /* font-size: 53.868px; */
+  position: relative;
   font-size: 4vw;
   font-family: "UltimaPro";
   color: rgb( 255, 255, 255 );
@@ -250,6 +253,8 @@ img{
   right: 4.9%;
   top: 5.5%;
   float: right;
+  cursor: pointer;
+  z-index: 11;
 }
 
 #month{
@@ -623,16 +628,16 @@ footer ul li a{
 }
 
 footer .contacts{
-  position: absolute;
+  position: relative; 
   width: 15%;
-  bottom: 10%;
+  bottom: 20%;
   float: right;
   right: 18.5%;
 }
 
 #email, #phone {
   /* font-size: 17.195px; */
-  font-size: 1.3vw;
+  font-size: 1.4vw;
   font-family: "UltimaPro";
   color: white;
   font-weight: bold;
@@ -643,35 +648,38 @@ footer .contacts{
 /******End Footer******/
 
 /******Beginning Menu pop-up******/
-.menu_page{
+#menu_page{
   display: none;
   position: absolute;
-  bottom: 0;
-  height: 627px;
-  width: 500px;
+  top: 100%;
+  /* bottom: 0; */
+  height: 100%;
+  width: 30%;
   background: url('files/bg-menu-popup.gif') repeat-y 0 0;
   float: right;
-  right: 40px;
+  right: 4%;
   opacity: 1;
+  z-index: 20;
 }
 
 #close{
   position: absolute;
-  right: 110px;
-  width: 100px;
-  top: 30px;
+  right: 5%;
+  width: 25%;
+  top: 5%;
   /* font-size: 13px; */
   font-size: 1vw;
   font-family: "UltimaPro";
   color: rgb( 34, 34, 34 );
+  cursor: pointer;
 }
 
 #close span{
-  margin-right: 20px;
+  margin-right: 20%;
 }
 
 .menu_form{
-  margin-left: -50px;
+  /* margin-left: -5%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -684,16 +692,31 @@ footer .contacts{
   font-family: "UltimaPro";
   color: rgb( 34, 34, 34 );
   font-weight: bold;
-  margin-bottom: 50px;
-  margin-top: 90px;
+  margin-bottom: 10%;
+  margin-top: 25%;
 }
 
-.menu_form p{
+.menu_form ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.menu_form li{
+  display:inline-block;
+  margin-bottom: 30%;
+}
+
+.menu_form a{
   /* font-size: 12px; */
-  font-size: 0.9vw;
+  font-size: 1vw;
   font-family: "UltimaPro";
   color: rgb( 34, 34, 34 );
-  margin-bottom: 40px;
+  
+  text-decoration: none;
 }
 
 .startProject{
