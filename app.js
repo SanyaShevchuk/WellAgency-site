@@ -1,18 +1,16 @@
 var autoDisplayTime = new Date().getTime();
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+var current=3;
+var doAuto = true;
 var differenceInTime;
+
 function plusSlides(n){
-  if(doAuto){
-    doAuto = false;
-  
-    document.querySelector('.images').style.animationPlayState = "paused";
-    current--;
-    var now = new Date().getTime();
-    differenceInTime = now-autoDisplayTime;
-  }
+  stopAutoAnimation();
   showSlides(n);
 }
 
-function currentSlide(n){
+function stopAutoAnimation(){
   if(doAuto){
     doAuto = false;
   
@@ -21,6 +19,10 @@ function currentSlide(n){
     var now = new Date().getTime();
     differenceInTime = now-autoDisplayTime;
   }
+}
+
+function currentSlide(n){
+  stopAutoAnimation();
   current = n;
   showSlides(0);
 }
@@ -29,10 +31,6 @@ $(document).ready(function(){
   showSlidesAuto();
 })
 
-var slides = document.getElementsByClassName("mySlides");
-var dots = document.getElementsByClassName("dot");
-var current=3;
-var doAuto = true;
 function showSlidesAuto(){
   if(doAuto){
     if(current+1>slides.length){
@@ -47,11 +45,16 @@ function showSlidesAuto(){
       slides[i].style.display = "none";
     }
   
+    for(i=0; i < dots.length; i++){
+      dots[i].className = dots[i].className.replace("active","");
+    }
+
+    dots[current].className += " active";
     slides[current].style.display = "block";
     current++;
     window.setTimeout(function(){
       showSlidesAuto()
-    }, 3000);
+    }, 5000);
   }
 }
 
@@ -73,10 +76,11 @@ function showSlides(n){
   for(i=0; i < dots.length; i++){
     dots[i].className = dots[i].className.replace("active","");
   }
-  var images = document.querySelector('.images');
-  var st = window.getComputedStyle(images);
 
-  var leffy = parseInt(st.getPropertyValue('left'));
+  var images = document.querySelector('.images');
+  var leffy = 
+    parseInt(window.getComputedStyle(images)
+      .getPropertyValue('left'));
   switch(current){
     case 0: leffy = -40;break;
     case 1: leffy = -60;break;
@@ -87,6 +91,8 @@ function showSlides(n){
   if(differenceInTime > 3000){
     leffy+=20 * (parseInt(differenceInTime/3000)%5);
   }
+
   images.style.marginLeft = leffy+"%";
   slides[current].style.display = "block";
-  dots[current].className += " active";}
+  dots[current].className += " active";
+}
