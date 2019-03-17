@@ -1,24 +1,28 @@
-var slideIndex = 1;
-// showSlides(slideIndex);
-var da = new Date().getTime();
-var fuck;
+var autoDisplayTime = new Date().getTime();
+var differenceInTime;
 function plusSlides(n){
   if(doAuto){
     doAuto = false;
   
     document.querySelector('.images').style.animationPlayState = "paused";
     current--;
-    var no = new Date().getTime();
-    fuck = no-da;
+    var now = new Date().getTime();
+    differenceInTime = now-autoDisplayTime;
   }
-
-  
-  // showSlides(slideIndex+=n);
   showSlides(n);
 }
 
 function currentSlide(n){
-  showSlides(slideIndex=n);
+  if(doAuto){
+    doAuto = false;
+  
+    document.querySelector('.images').style.animationPlayState = "paused";
+    current--;
+    var now = new Date().getTime();
+    differenceInTime = now-autoDisplayTime;
+  }
+  current = n;
+  showSlides(0);
 }
 
 $(document).ready(function(){
@@ -52,11 +56,7 @@ function showSlidesAuto(){
 }
 
 function showSlides(n){
-  // var frame = document.querySelector('.images');
-  // frame.innerHTML = `${frame.innerHTML + frame.innerHTML}`;
-  // var i;
-  // var slides = document.getElementsByClassName("mySlides");
-  // var dots = document.getElementsByClassName("dot");
+
   current+=n;
   if(current>slides.length-1){
     current = 0;
@@ -75,7 +75,6 @@ function showSlides(n){
   }
   var images = document.querySelector('.images');
   var st = window.getComputedStyle(images);
-  var width = document.getElementById('pics').offsetWidth;
 
   var leffy = parseInt(st.getPropertyValue('left'));
   switch(current){
@@ -85,15 +84,9 @@ function showSlides(n){
     case 3: leffy = -100;break;
     case 4: leffy = -20;break;
   }
-  if(fuck > 3000){
-    leffy+=20 * parseInt(fuck/3000);
-
+  if(differenceInTime > 3000){
+    leffy+=20 * (parseInt(differenceInTime/3000)%5);
   }
-  
-  // if(n==1) leffy += 20;
-  // else leffy -=20;
- 
-
   images.style.marginLeft = leffy+"%";
   slides[current].style.display = "block";
   dots[current].className += " active";}
