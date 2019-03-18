@@ -32,7 +32,7 @@ function showSlidesAuto(){
     current++;
     window.setTimeout(function(){
       showSlidesAuto()
-    }, 1000);
+    }, 5000);
   }
 }
 
