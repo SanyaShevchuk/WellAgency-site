@@ -48,6 +48,10 @@ header{
   height: 100px;
 }
 
+#Page_1 .menu_icon{
+  display: none;
+}
+
 #Page_1 .logo{
   float: left;
   margin: 4.4% 0 0 7%;
@@ -726,15 +730,7 @@ footer .contacts{
 
 /******media queries******/
 
-@media screen and (max-width:1300px){
-  /* #Page_2{
-  background:
-    url('files/Page2/Wawe1.png') no-repeat 0px 0,
-    linear-gradient(to right, #212121, #3b3b3b);
-  background-size: contain; */
-
-}
-@media screen and (max-width: 1200px) and (min-width: 1100px){
+/* @media screen and (max-width: 1200px) and (min-width: 1100px){
 
    #Page_3 p{
      width: 62%;
@@ -753,13 +749,11 @@ footer .contacts{
    footer{
      height: 50%;
    }
-}
+} */
 
-@media screen and (max-width: 1100px) and (min-width: 1000px){
+/* @media screen and (max-width: 1100px) and (min-width: 1000px){
 
-  /* .social_media{
-    width: 25%;
-  } */
+  
 
   footer{
     height: 45%;
@@ -775,9 +769,7 @@ footer .contacts{
 }
 
 @media screen and (max-width: 1000px) and (min-width: 900px){
-  /* .social_media{
-    width: 25%;
-  } */
+  
   .registration{
     margin: 10% 0 0 18.5%;
   }
@@ -907,12 +899,7 @@ footer .contacts{
 
 @media screen and (max-width: 800px) and (min-width: 700px) {
 
-  /* #Page_2{
-  background:
-    url('files/Page2/Wawe1.png') no-repeat 0px 290px,
-    linear-gradient(to right, #212121, #3b3b3b);
-  background-size: contain;
-} */
+  
   footer ul li a{
     font-size: 2vw;
   }
@@ -934,15 +921,7 @@ footer .contacts{
     font-size: 2vw;
   }
 
-  /* img{
-    margin-left: 8px;
-  } */
-
-  /* .landing_text h1{
-    width: 80%;
-    font-size: 4vw;
-    height: 80%;
-  } */
+  
 
   .landing_text p{
     font-size: 2vw;
@@ -995,91 +974,96 @@ footer .contacts{
   footer{
     height: 45%;
   }
-}
+} */
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 480px){
+  #Page_1 .menu, .social_media, .language,
+  #month, .service_item{
+    display: none;
+  }
+  
+  #Page_1 .logo{
+    margin-top: 13%;
+  }
 
-  .menu li{
-  margin: 6% 8% 0px 0px;
+  .logo{
+    margin-top: 13%;
+    width: 88px;
+    height: 42px;
+  }
+
+  .landing_text h1{
+    width: 85%;
+    line-height: 150%;
+    font-size: 8vw;
+    margin-bottom: 50%;
+    margin-top: 30%;
   }
 
   .landing_text p{
-    font-size: 3vw;
-    margin-bottom: 80px;
-  }
-
-  /* .social_media{
-    width: 40%;
-  } */
-
-  .social_media img{
-    width: 28px;
-  }
-  #Page_2 p{
-    font-size: 2.5vw;
-    margin-top: 20px;
-  }
-
-  #Page_3 p{
-    width: 62%;
-    margin-top: 4%;
-    font-size: 2vw;
-  }
-
-  #Page_3 .service_item a{
-    font-size: 3vw;
-  }
-
-  #Page_3 .service_item li{
-    margin-top: 7%;
-    margin-right: 20%;
-  }
-
-  .registration{
-    margin: 25% 0 0 18.5%;
-  }
-
-  .registration p{
-    width: 80%;
-    font-size: 3vw;
-  }
-
-  .registration_fields input{
-    width: 48%;
-    font-size: 3vw;
-    margin-top: 20px;
+    width: 70%;
+    font-size: 4vw;
+    margin-bottom: 55%;
+    color: black;
   }
 
   .startProject{
-    font-size: 2vw;
-    margin-top: 20px;
+    height: 60px;
+    width: 200px;
+    border-radius: 7px;
+    font-size: 3.9vw;
   }
 
-  footer ul li a{
-    font-size: 3vw;
-  }
-  footer .contacts{
-    width: 25%;
-    bottom: 30%;
-    float: right;
-    right: 18.5%;
-  }
-  #email, #phone {
-    font-size: 2.5vw;
-  }
-  footer ul li{
-    margin: 0;
+  #Page_1 .menu_icon{
+    display: block;
   }
 
-  footer ul li a{
-    margin-left: 10%;
+
+  #Page_2 article, #Page_3 article{
+    margin-top: 25%;
+  }
+  
+  #Page_2 h1, #Page_3 h1{
+    font-size: 10vw;
+    width: 80%; 
+    line-height: 120%; 
+    margin-bottom: 15%; 
+  }
+  
+  #Page_2 p, #Page_3 p{
+    width: 80%;
+    font-size: 4vw;
+    line-height: 200%;
   }
 
-  footer img{
-    width: 80px;
-  }
-
-  footer{
-    height: 35%;
-  }
 }
+
+
+/* @media only screen and (min-width: 480px) {
+  Здесь стили более разумных, но все еще мобильных устройств. Android, iPhone  и так далее. 
+  }
+   
+@media only screen and (min-width: 768px) {
+  Планшеты в режиме portrait.
+  }
+   
+@media only screen and (min-width: 992px) {
+  Планшеты в режиме landscape, нетбуки, ноутбуки, десктоп.
+  }
+   
+@media only screen and (min-width: 1382px) {
+   Десктоп с большими разрешениями, телевизоры.
+
+Landscape phones and down
+@media (max-width: 480px) { ... }
+
+ Landscape phone to portrait tablet 
+@media (max-width: 767px) { ... }
+
+ Portrait tablet to landscape and desktop 
+@media (min-width: 768px) and (max-width: 979px) { ... }
+
+ Large desktop 
+@media (min-width: 1200px) { ... }
+
+   } */
