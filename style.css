@@ -673,17 +673,17 @@ footer .contacts{
   /* bottom: 0; */
   height: 100%;
   width: 30%;
-  background: url('files/bg-menu-popup.gif') repeat-y 0 0;
+  background: linear-gradient(to right, #d3c6da, #f8cad5);
   float: right;
   right: 4%;
   opacity: 1;
   z-index: 20;
 }
 
-#close{
+.close{
   position: absolute;
   right: 5%;
-  width: 25%;
+  width: 30%;
   top: 5%;
   /* font-size: 13px; */
   font-size: 1vw;
@@ -692,7 +692,7 @@ footer .contacts{
   cursor: pointer;
 }
 
-#close span{
+.close span{
   margin-right: 20%;
 }
 
@@ -1007,17 +1007,17 @@ footer .contacts{
   }
 
   .landing_text h1{
-    width: 85%;
+    width: 90%;
     line-height: 150%;
-    font-size: 8vw;
+    font-size: 8.5vw;
     margin-bottom: 50%;
     margin-top: 30%;
   }
 
   .landing_text p{
-    width: 70%;
+    width: 80%;
     font-size: 4vw;
-    margin-bottom: 55%;
+    margin-bottom: 45%;
     color: black;
   }
 
@@ -1059,7 +1059,7 @@ footer .contacts{
   }
   .swiper-container {
     width: 100%;
-    height: 70%;
+    height: 55%;
   }
   #Page_3 .mob-service-item{
     height: 100%;
@@ -1155,6 +1155,8 @@ footer .contacts{
     z-index: 25;
   }
 
+ 
+
   .dot{
     margin: 0 5%;
   }
@@ -1208,40 +1210,71 @@ footer .contacts{
   }
 
   #menu_page{
+    display: none;
+  }
+  #mob-menu-page{
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: 30;
     right: 0;
     left: 0;
+    background: linear-gradient(to right, #d3c6da, #f8cad5);
+    z-index: 20;
   }
 
-  #close{
-    font-size: 1vw;
+  #mob-menu-page .social_media{
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-content: space-around;
+    margin-left: 3%;
+    margin-bottom: 20%;
   }
-  
-  #close span{
+
+  #mob-menu-page .social_media a{
+    width: 70px;
+    height: 70px;
+    margin-left: 0;
+    margin-right: 5%;
   }
-  
-  .menu_form{
-    /* margin-left: -5%; */
+
+  #mob-menu-page .social_media img{
+    width: 70px;
+    height: auto;
+  }
+
+  .logo{
+    margin-left: 7%;
+  }
+
+  .close{
+    right: 1%;
+    top:7%;
+    width: 30%;
+    font-size: 3vw;
   }
   
   .menu_form h1{
     font-size: 7vw;
     margin-bottom: 10%;
     margin-top: 25%;
+    font-weight: 900;
   }
   
-  .menu_form ul{
-  }
   
   .menu_form li{
     margin-bottom: 30%;
   }
   
   .menu_form a{
-    font-size: 3vw;
+    font-size: 4vw;
+    font-weight: 100;
+    opacity: 0.8;
+  }
+
+  .menu_form .startProject{
+    margin-left: 3%;
   }
   
 }
