@@ -191,6 +191,11 @@ img{
   width: 1030px;
 }
 
+#mob-bg{
+  display: none;
+}
+
+
 /******End Page 1******/
 
 
@@ -292,6 +297,10 @@ img{
 
 #Page_2 #russian, #Page_4 #russian{
   border-color: white;
+}
+
+#mob-bg-second-page{
+  display: none;
 }
 /******End Page 2******/
 
@@ -995,6 +1004,16 @@ footer .contacts{
   #month{
     display: none;
   }
+
+  #mob-bg{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    opacity: 0.3;
+    margin-left: 7%;
+    margin-bottom: -20%;
+  }
   
   #Page_1 .logo{
     margin-top: 13%;
@@ -1036,7 +1055,35 @@ footer .contacts{
   #Page_2 article, #Page_3 article{
     margin-top: 25%;
   }
-  
+
+  #bg-second-page{
+    display: none;
+  }
+
+  #mob-bg-second-page{
+    display: block;
+  }
+
+  #Page_1, #Page_2{
+    overflow: hidden;
+  }
+
+  #mob-bg-second-page-2{
+    position: absolute;
+    bottom: 0;
+    opacity: 0.2;
+    height: 70%;
+    left: -160%;
+  }
+
+  #mob-bg-second-page-1{
+    position: absolute;
+    height: 40%;
+    bottom: 0;
+    left: -50%;
+  }
+
+
   #Page_2 h1, #Page_3 h1{
     font-size: 10vw;
     width: 80%; 
@@ -1048,6 +1095,8 @@ footer .contacts{
     width: 80%;
     font-size: 4vw;
     line-height: 200%;
+    font-weight: 600;
+    opacity: 1;
   }
 
   #Page_3 .service_item, #Page_3 .service p{
