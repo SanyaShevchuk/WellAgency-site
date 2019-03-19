@@ -989,6 +989,7 @@ footer .contacts{
     width: 100%;
     object-fit: cover;
     z-index: -11;
+    /* opacity: 0.9; */
   }
 
   .indicators{
