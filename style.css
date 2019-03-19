@@ -353,7 +353,7 @@ img{
   margin-left: 3.7%;
 }
 
-#Page_3 .service_item ul, #Page_3 .mob-service-item ul{
+#Page_3 .service_item ul, #Page_3 .mob-service-item {
   display: flex;
   flex: row;
   flex-wrap: wrap;
@@ -754,9 +754,18 @@ footer .contacts{
 /******media queries******/
 
 @media screen and (max-width: 767px) and (min-width: 481px){
+  
+}
+
+
+@media screen and (max-width: 480px){
   #Page_1 .menu, .social_media, .language,
   #month{
     display: none;
+  }
+
+  #Page_1 article{
+    height: 70%;
   }
 
   #mob-bg{
@@ -765,7 +774,7 @@ footer .contacts{
     bottom: 0;
     height: 80%;
     opacity: 0.3;
-    margin-left: 35%;
+    margin-left: 25%;
     margin-bottom: -10%;
   }
   
@@ -781,22 +790,25 @@ footer .contacts{
 
   .landing_text h1{
     width: 90%;
+    height: 40%;
     line-height: 150%;
     font-size: 6vw;
-    margin-bottom: 40%;
+    margin-bottom: 10%;
     margin-top: 10%;
   }
 
   .landing_text p{
     width: 80%;
+    height: 25%;
     font-size: 3vw;
-    margin-bottom: 20%;
+    margin-top: 0;
+    margin-bottom: 10%;
     color: black;
   }
 
   .startProject{
-    height: 60px;
-    width: 200px;
+    height: 10%;
+    width: 60%;
     border-radius: 7px;
     font-size: 2.5vw;
   }
@@ -806,356 +818,8 @@ footer .contacts{
   }
 
   #Page_2 article{
-    margin-top: 15%;
-  }
-
-  #bg-second-page{
-    display: none;
-  }
-
-  #mob-bg-second-page{
-    display: block;
-  }
-
-  #Page_1, #Page_2{
-    overflow: hidden;
-  }
-
-  #mob-bg-second-page-2{
-    position: absolute;
-    bottom: 0;
-    opacity: 0.2;
-    height: 80%;
-    left: -75%;
-  }
-
-  #mob-bg-second-page-1{
-    position: absolute;
     height: 40%;
-    bottom: 0;
-    width: 100%;
-    left: -12%;
-  }
-
-
-  #Page_2 h1, #Page_3 h1{
-    font-size: 10vw;
-    width: 80%; 
-    line-height: 120%; 
-    margin-bottom: 10%; 
-  }
-  
-  #Page_2 p, #Page_3 p{
-    width: 80%;
-    font-size: 3vw;
-    line-height: 150%;
-    font-weight: 600;
-    opacity: 1;
-  }
-
-  #Page_3 .service_item, #Page_3 .service p{
-    display: none;
-  }
- 
-  #Page_3 p{
-    font-size: 3.5vw;
-  }
-
-  #Page_3 .mob-service{
     margin-top: 15%;
-  }
-
-  #Page_3 article{
-    margin-top: 10%;
-  }
-
-  #Page_3 .swiper-container{
-    display: block;
-  }
-  .swiper-container {
-    width: 100%;
-    height: 55%;
-  }
-  #Page_3 .mob-service-item{
-    height: 100%;
-    margin-left: 3.7%;
-  }
-  
-  #Page_3 .mob-service-item ul{
-   margin-left: 5%;
-  }
-
-  #Page_3 h1{
-    margin-bottom: 5%;
-    margin-top:0;
-  }
-
-  #Page_3 .mob-service-item li{
-    width: 35%;
-    margin-top: 5%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  #Page_3 .mob-service-item li:nth-child(2n+1){
-    margin-right: 20%;
-  }
-  
-  #Page_3 .mob-service-item a{
-    font-size: 4vw;
-  }
-
-  #Page_3 .mob-service p{
-    margin-top: -10%;
-  }
-
-  #Page_4 .fr-trust-wrapper, section:after,
-  .social_media, .languages{
-    display: none;
-  }
-
-  #Page_4 .mySlides, #Page_4 .mySlides img{
-    display: block;
-  }
-
-  #Page_4 .mySlides h1{
-    display: block;
-  }
-
-  #employee-name{
-    height: 10%;
-    top: 60%;
-    left: 15%;
-    font-size: 9vw;
-    color: black;
-  }
-
-  #employee-info{
-    top: 70%;
-    width: 75%;
-    height: 20%;
-    color: black;
-    left: 15%;
-    font-size: 4vw;
-    font-weight: 800;
-    line-height: 100%;
-  }
-
-  .slideshow-container{
-    width: 100%;
-    left: 0%;
-    /* z-index: -1; */
-  }
-
-  .mySlides{
-    width: 100%;
-  }
-  .mySlides h1, .mySlides p{
-    z-index: 10;
-    margin: 0;
-    padding: 0;
-  }
-  .mySlides img{
-    position: absolute;
-    width: 100%;
-    /* object-fit: cover; */
-    background-position: center center;
-    z-index: -25;
-  }
-
-  .indicators{
-    left: 30%;
-    right: 25%;
-    width: 50%;
-    margin: auto;
-  }
-
-  #Page_4 .logo{
-    position: absolute;
-    z-index: 25;
-  }
-
- 
-
-  .dot{
-    margin: 0 5%;
-  }
-
-  .registration{
-    margin: 10% 0 0 18.5%;
-  }
-  
-  .registration p{
-    width: 80%;
-    font-size: 4vw;
-    line-height: 150%;
-    margin-bottom: 5%;
-  }
-  
-  .registration_fields input{
-    width: 90%;
-    font-size: 3vw;
-    margin-top: 7%;
-    border-bottom: 1px solid black;
-  }
-
-  #Page_5 .startProject{
-    margin-top: 7%;
-  }
-
-  .registration_fields input:nth-child(4){
-    display: none;
-  }
-  
-  #projectDescription{
-    display: block;
-    margin-top: 7%;
-  }
-
-  #projectDescription span{
-    font-size: 3vw;
-    opacity: 0.7;
-  }
-
-  #projectDescription textarea{
-    margin-top: 2%;
-    width: 90%;
-    background-color: transparent;
-    border: 1px solid black;
-    border-radius: 8px;
-  }
-
-  footer{
-    display: none;
-  }
-
-  #menu_page{
-    display: none;
-  }
-  #mob-menu-page{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    right: 0;
-    left: 0;
-    background: linear-gradient(to right, #d3c6da, #f8cad5);
-    z-index: 20;
-  }
-
-  #mob-menu-page .social_media{
-    width: 100%;
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    align-content: space-around;
-    margin-left: 3%;
-    margin-bottom: 10%;
-  }
-
-  #mob-menu-page .social_media a{
-    width: 70px;
-    height: 70px;
-    margin-left: 0;
-    margin-right: 5%;
-  }
-
-  #mob-menu-page .social_media img{
-    width: 70px;
-    height: auto;
-  }
-
-  .logo{
-    margin-left: 7%;
-  }
-
-  .close{
-    right: 1%;
-    top:7%;
-    width: 30%;
-    font-size: 3vw;
-  }
-  
-  .menu_form h1{
-    font-size: 7vw;
-    margin-bottom: 10%;
-    margin-top: 10%;
-    font-weight: 900;
-  }
-  
-  
-  .menu_form li{
-    margin-bottom: 15%;
-  }
-  
-  .menu_form a{
-    font-size: 4vw;
-    font-weight: 100;
-    opacity: 0.8;
-  }
-
-  .menu_form .startProject{
-    margin-left: 3%;
-  }
-  
-  
-}
-
-
-@media screen and (max-width: 480px){
-  #Page_1 .menu, .social_media, .language,
-  #month{
-    display: none;
-  }
-
-  #mob-bg{
-    display: block;
-    position: absolute;
-    bottom: 0;
-    height: 80%;
-    opacity: 0.3;
-    margin-left: 7%;
-    margin-bottom: -20%;
-  }
-  
-  #Page_1 .logo{
-    margin-top: 13%;
-  }
-
-  .logo{
-    margin-top: 13%;
-    width: 88px;
-    height: 42px;
-  }
-
-  .landing_text h1{
-    width: 90%;
-    line-height: 150%;
-    font-size: 8.5vw;
-    margin-bottom: 50%;
-    margin-top: 30%;
-  }
-
-  .landing_text p{
-    width: 80%;
-    font-size: 4vw;
-    margin-bottom: 45%;
-    color: black;
-  }
-
-  .startProject{
-    height: 60px;
-    width: 200px;
-    border-radius: 7px;
-    font-size: 3.9vw;
-  }
-
-  #Page_1 .menu_icon{
-    display: block;
-  }
-
-
-  #Page_2 article, #Page_3 article{
-    margin-top: 25%;
   }
 
   #bg-second-page{
@@ -1175,332 +839,7 @@ footer .contacts{
     bottom: 0;
     opacity: 0.2;
     height: 70%;
-    left: -160%;
-  }
-
-  #mob-bg-second-page-1{
-    position: absolute;
-    height: 40%;
-    bottom: 0;
-    left: -50%;
-  }
-
-
-  #Page_2 h1, #Page_3 h1{
-    font-size: 10vw;
-    width: 80%; 
-    line-height: 120%; 
-    margin-bottom: 15%; 
-  }
-  
-  #Page_2 p, #Page_3 p{
-    width: 80%;
-    font-size: 4vw;
-    line-height: 200%;
-    font-weight: 600;
-    opacity: 1;
-  }
-
-  #Page_3 .service_item, #Page_3 .service p{
-    display: none;
-  }
- 
-  #Page_3 .swiper-container{
-    display: block;
-  }
-  .swiper-container {
-    width: 100%;
-    height: 55%;
-  }
-  #Page_3 .mob-service-item{
-    height: 100%;
-    margin-left: 3.7%;
-  }
-  
-  #Page_3 .mob-service-item ul{
-   margin-left: 5%;
-  }
-  
-  #Page_3 .mob-service-item li{
-    width: 35%;
-    margin-top: 10%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  #Page_3 .mob-service-item li:nth-child(2n+1){
-    margin-right: 20%;
-  }
-  
-  #Page_3 .mob-service-item a{
-    font-size: 5vw;
-  }
-
-  #Page_3 .mob-service p{
-    margin-top: -10%;
-  }
-
-  #Page_4 .fr-trust-wrapper, section:after,
-  .social_media, .languages{
-    display: none;
-  }
-
-  #Page_4 .mySlides, #Page_4 .mySlides img{
-    display: block;
-  }
-
-  #Page_4 .mySlides h1{
-    display: block;
-  }
-
-  #employee-name{
-    height: 10%;
-    top: 70%;
-    left: 15%;
-    font-size: 9vw;
-    color: black;
-  }
-
-  #employee-info{
-    top: 77%;
-    width: 75%;
-    height: 20%;
-    color: black;
-    left: 15%;
-    font-size: 4vw;
-    font-weight: 800;
-    line-height: 160%;
-  }
-
-  .slideshow-container{
-    width: 100%;
-    left: 0%;
-    /* z-index: -1; */
-  }
-
-  .mySlides{
-    width: 100%;
-  }
-  .mySlides h1, .mySlides p{
-    z-index: 10;
-    margin: 0;
-    padding: 0;
-  }
-  .mySlides img{
-    position: absolute;
-    width: 100%;
-    object-fit: cover;
-    background-position: center center;
-    z-index: -25;
-  }
-
-  .indicators{
-    left: 30%;
-    right: 25%;
-    width: 50%;
-    margin: auto;
-  }
-
-  #Page_4 .logo{
-    position: absolute;
-    z-index: 25;
-  }
-
- 
-
-  .dot{
-    margin: 0 5%;
-  }
-
-  .registration{
-    margin: 25% 0 0 18.5%;
-  }
-  
-  .registration p{
-    width: 80%;
-    font-size: 5vw;
-    line-height: 150%;
-    margin-bottom: 10%;
-  }
-  
-  .registration_fields input{
-    width: 90%;
-    font-size: 4vw;
-    margin-top: 10%;
-    border-bottom: 1px solid black;
-  }
-
-  #Page_5 .startProject{
-    margin-top:20%;
-  }
-
-  .registration_fields input:nth-child(4){
-    display: none;
-  }
-  
-  #projectDescription{
-    display: block;
-    margin-top: 12%;
-  }
-
-  #projectDescription span{
-    font-size: 4vw;
-    opacity: 0.7;
-  }
-
-  #projectDescription textarea{
-    margin-top:2%;
-    width: 90%;
-    background-color: transparent;
-    border: 1px solid black;
-    border-radius: 8px;
-  }
-
-  footer{
-    display: none;
-  }
-
-  #menu_page{
-    display: none;
-  }
-  #mob-menu-page{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    right: 0;
-    left: 0;
-    background: linear-gradient(to right, #d3c6da, #f8cad5);
-    z-index: 20;
-  }
-
-  #mob-menu-page .social_media{
-    width: 100%;
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    align-content: space-around;
-    margin-left: 3%;
-    margin-bottom: 20%;
-  }
-
-  #mob-menu-page .social_media a{
-    width: 70px;
-    height: 70px;
-    margin-left: 0;
-    margin-right: 5%;
-  }
-
-  #mob-menu-page .social_media img{
-    width: 70px;
-    height: auto;
-  }
-
-  .logo{
-    margin-left: 7%;
-  }
-
-  .close{
-    right: 1%;
-    top:7%;
-    width: 30%;
-    font-size: 3vw;
-  }
-  
-  .menu_form h1{
-    font-size: 7vw;
-    margin-bottom: 10%;
-    margin-top: 25%;
-    font-weight: 900;
-  }
-  
-  
-  .menu_form li{
-    margin-bottom: 30%;
-  }
-  
-  .menu_form a{
-    font-size: 4vw;
-    font-weight: 100;
-    opacity: 0.8;
-  }
-
-  .menu_form .startProject{
-    margin-left: 3%;
-  }
-
-  #Page_1 .menu, .social_media, .language,
-  #month{
-    display: none;
-  }
-
-  #mob-bg{
-    display: block;
-    position: absolute;
-    bottom: 0;
-    height: 80%;
-    opacity: 0.3;
-    margin-left: 35%;
-    margin-bottom: -10%;
-  }
-  
-  #Page_1 .logo{
-    margin-top: 10%;
-  }
-
-  .logo{
-    margin-top: 10%;
-    width: 88px;
-    height: 42px;
-  }
-
-  .landing_text h1{
-    width: 90%;
-    line-height: 150%;
-    font-size: 6vw;
-    margin-bottom: 40%;
-    margin-top: 10%;
-  }
-
-  .landing_text p{
-    width: 80%;
-    font-size: 3vw;
-    margin-bottom: 20%;
-    color: black;
-  }
-
-  .startProject{
-    height: 60px;
-    width: 200px;
-    border-radius: 7px;
-    font-size: 2.5vw;
-  }
-
-  #Page_1 .menu_icon{
-    display: block;
-  }
-
-  #Page_2 article{
-    margin-top: 15%;
-  }
-
-  #bg-second-page{
-    display: none;
-  }
-
-  #mob-bg-second-page{
-    display: block;
-  }
-
-  #Page_1, #Page_2{
-    overflow: hidden;
-  }
-
-  #mob-bg-second-page-2{
-    position: absolute;
-    bottom: 0;
-    opacity: 0.2;
-    height: 80%;
-    left: -75%;
+    left: -105%;
   }
 
   #mob-bg-second-page-1{
@@ -1512,36 +851,46 @@ footer .contacts{
   }
 
 
-  #Page_2 h1, #Page_3 h1{
+  #Page_2 h1{
     font-size: 10vw;
     width: 80%; 
+    height: 40%;
     line-height: 120%; 
-    margin-bottom: 10%; 
+    margin-bottom: 7%; 
   }
   
   #Page_2 p, #Page_3 p{
     width: 80%;
-    font-size: 3vw;
+    height: 60%;
+    font-size: 3.5vw;
     line-height: 150%;
     font-weight: 600;
     opacity: 1;
+  }
+
+  #Page_3 article{
+    height: 20%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+
+  #Page_3 h1{
+    font-size: 10vw;
+    width: 80%; 
+    height: 40%;
+    line-height: 120%; 
+    padding-top: 15%;
+    padding-bottom: 20%;
   }
 
   #Page_3 .service_item, #Page_3 .service p{
     display: none;
   }
  
-  #Page_3 p{
-    font-size: 3.5vw;
-  }
-
   #Page_3 .mob-service{
     margin-top: 15%;
   }
 
-  #Page_3 article{
-    margin-top: 10%;
-  }
 
   #Page_3 .swiper-container{
     display: block;
@@ -1552,18 +901,9 @@ footer .contacts{
   }
   #Page_3 .mob-service-item{
     height: 100%;
-    margin-left: 3.7%;
+    margin: 0 14%;
   }
   
-  #Page_3 .mob-service-item ul{
-   margin-left: 5%;
-  }
-
-  #Page_3 h1{
-    margin-bottom: 5%;
-    margin-top:0;
-  }
-
   #Page_3 .mob-service-item li{
     width: 35%;
     margin-top: 5%;
@@ -1572,15 +912,18 @@ footer .contacts{
   }
 
   #Page_3 .mob-service-item li:nth-child(2n+1){
-    margin-right: 20%;
+    margin-right: 30%;
   }
   
   #Page_3 .mob-service-item a{
     font-size: 4vw;
   }
 
-  #Page_3 .mob-service p{
-    margin-top: -10%;
+  #Page_3 .swiper-slide p{
+    width: 60%;
+    height: 70%;
+    margin: 15% auto;
+    font-size: 3.7vw;
   }
 
   #Page_4 .fr-trust-wrapper, section:after,
@@ -1598,16 +941,16 @@ footer .contacts{
 
   #employee-name{
     height: 10%;
-    top: 60%;
+    top: 65%;
     left: 15%;
     font-size: 9vw;
     color: black;
   }
 
   #employee-info{
-    top: 70%;
+    top: 73%;
     width: 75%;
-    height: 20%;
+    height: 15%;
     color: black;
     left: 15%;
     font-size: 4vw;
@@ -1629,19 +972,33 @@ footer .contacts{
     margin: 0;
     padding: 0;
   }
+
   .mySlides img{
     position: absolute;
     width: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
     background-position: center center;
     z-index: -25;
   }
 
   .indicators{
-    left: 30%;
-    right: 25%;
-    width: 50%;
-    margin: auto;
+    bottom: 3%;
+    right: 20%;
+    left: 20%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .dot{
+    background-color: white;
+  }
+
+  .active, dot:hover{
+    /* background-color: #717171;
+     */
+     background-color: rgb(46, 38, 38);
   }
 
   #Page_4 .logo{
@@ -1649,32 +1006,39 @@ footer .contacts{
     z-index: 25;
   }
 
- 
-
-  .dot{
+  /* .dot{
     margin: 0 5%;
-  }
+  } */
 
   .registration{
+    height: 70%;
     margin: 10% 0 0 18.5%;
   }
   
   .registration p{
+    height: 20%;
     width: 80%;
     font-size: 4vw;
     line-height: 150%;
     margin-bottom: 5%;
   }
+
+  .registration_fields{
+    height: 50%;
+  }
   
   .registration_fields input{
     width: 90%;
+    height: 8%;
     font-size: 3vw;
     margin-top: 7%;
     border-bottom: 1px solid black;
   }
 
   #Page_5 .startProject{
-    margin-top: 7%;
+    margin-top: 10%;  
+    height: 10%;
+    font-size: 3.5vw;
   }
 
   .registration_fields input:nth-child(4){
@@ -1682,6 +1046,7 @@ footer .contacts{
   }
   
   #projectDescription{
+    height: 45%;
     display: block;
     margin-top: 7%;
   }
@@ -1689,9 +1054,11 @@ footer .contacts{
   #projectDescription span{
     font-size: 3vw;
     opacity: 0.7;
+    height: 10%;
   }
 
   #projectDescription textarea{
+    height: 70%;
     margin-top: 2%;
     width: 90%;
     background-color: transparent;
@@ -1706,6 +1073,7 @@ footer .contacts{
   #menu_page{
     display: none;
   }
+
   #mob-menu-page{
     position: absolute;
     height: 100%;
@@ -1716,6 +1084,10 @@ footer .contacts{
     z-index: 20;
   }
 
+  #mob-menu-page .menu_form{
+    height: 80%;
+  }
+
   #mob-menu-page .social_media{
     width: 100%;
     display: flex;
@@ -1723,19 +1095,31 @@ footer .contacts{
     flex-direction: row;
     align-content: space-around;
     margin-left: 3%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+    height: 15%;
+  }
+
+  #mob-menu-page .social_media{
+    width: 80%;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 15%;
   }
 
   #mob-menu-page .social_media a{
-    width: 70px;
-    height: 70px;
+    width: 20%;
+    height: 75%;
     margin-left: 0;
-    margin-right: 5%;
+    /* margin-right: 5%; */
   }
 
   #mob-menu-page .social_media img{
-    width: 70px;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .logo{
@@ -1744,20 +1128,27 @@ footer .contacts{
 
   .close{
     right: 1%;
-    top:7%;
+    top: 8.5%;
     width: 30%;
     font-size: 3vw;
   }
   
   .menu_form h1{
+    height: 10%;
     font-size: 7vw;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     margin-top: 10%;
     font-weight: 900;
   }
   
+  .menu_form ul{
+    height: 35%;
+    margin-bottom: 15%;
+    clear: both;
+  }
   
   .menu_form li{
+    height: 20%;
     margin-bottom: 15%;
   }
   
@@ -1768,8 +1159,11 @@ footer .contacts{
   }
 
   .menu_form .startProject{
-    margin-left: 3%;
+    margin-top: 0;
+    font-size: 3.5vw;
   }
+
+ 
   
 }
 
