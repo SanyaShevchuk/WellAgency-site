@@ -758,12 +758,7 @@ footer .contacts{
 
 /******media queries******/
 
-@media screen and (max-width: 767px) and (min-width: 481px){
-  
-}
-
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1100px){
   #Page_1 .menu, .social_media, .language,
   #month{
     display: none;
@@ -779,7 +774,7 @@ footer .contacts{
     bottom: 0;
     height: 80%;
     opacity: 0.3;
-    margin-left: 25%;
+    margin-left: 35%;
     margin-bottom: -10%;
   }
   
@@ -788,11 +783,11 @@ footer .contacts{
   }
 
   .logo{
-    margin-top: 10%;
+    margin-top: 9%;
     /* width: 88px;
     height: 42px; */
-    width: 18.5%;
-    height: 5%;
+    width: 11.5%;
+    height: 4%;
   }
 
   .landing_text h1{
@@ -800,7 +795,7 @@ footer .contacts{
     height: 40%;
     line-height: 150%;
     font-size: 6vw;
-    margin-bottom: 10%;
+    margin-bottom: 25%;
     margin-top: 10%;
   }
 
@@ -809,7 +804,7 @@ footer .contacts{
     height: 25%;
     font-size: 3vw;
     margin-top: 0;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
     color: black;
   }
 
@@ -826,7 +821,7 @@ footer .contacts{
 
   #Page_2 article{
     height: 40%;
-    margin-top: 15%;
+    margin-top: 10%;
   }
 
   #bg-second-page{
@@ -845,8 +840,8 @@ footer .contacts{
     position: absolute;
     bottom: 0;
     opacity: 0.2;
-    height: 70%;
-    left: -105%;
+    height: 80%;
+    left: -85%;
   }
 
   #mob-bg-second-page-1{
@@ -863,13 +858,13 @@ footer .contacts{
     width: 80%; 
     height: 40%;
     line-height: 120%; 
-    margin-bottom: 7%; 
+    margin-bottom: 15%; 
   }
   
   #Page_2 p, #Page_3 p{
     width: 80%;
     height: 60%;
-    font-size: 3.5vw;
+    font-size: 3.2vw;
     line-height: 150%;
     font-weight: 600;
     opacity: 1;
@@ -886,8 +881,8 @@ footer .contacts{
     width: 80%; 
     height: 40%;
     line-height: 120%; 
-    padding-top: 15%;
-    padding-bottom: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 
   #Page_3 .service_item, #Page_3 .service p{
@@ -898,14 +893,15 @@ footer .contacts{
     margin-top: 15%;
   }
 
-
   #Page_3 .swiper-container{
     display: block;
   }
+
   .swiper-container {
     width: 100%;
     height: 55%;
   }
+
   #Page_3 .mob-service-item{
     height: 100%;
     margin: 0 14%;
@@ -929,8 +925,8 @@ footer .contacts{
   #Page_3 .swiper-slide p{
     width: 60%;
     height: 70%;
-    margin: 15% auto;
-    font-size: 3.7vw;
+    margin: 10% auto;
+    font-size: 3.5vw;
   }
 
   #Page_4 .fr-trust-wrapper, section:after,
@@ -948,7 +944,7 @@ footer .contacts{
 
   #employee-name{
     height: 10%;
-    top: 69%;
+    top: 63%;
     left: 15%;
     font-size: 9vw;
     color: black;
@@ -957,7 +953,7 @@ footer .contacts{
 
   #employee-info{
     font-family: "UltimaProReg", "UltimaProLt";
-    top: 75%;
+    top: 69%;
     width: 75%;
     height: 15%;
     color: black;
@@ -976,18 +972,18 @@ footer .contacts{
   .mySlides{
     width: 100%;
   }
+
   .mySlides h1, .mySlides p{
     z-index: 10;
     margin: 0;
     padding: 0;
   }
 
-
   .mySlides img{
     position: absolute;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
     z-index: -11;
     /* opacity: 0.9; */
   }
@@ -1032,7 +1028,7 @@ footer .contacts{
 
   .registration{
     height: 70%;
-    margin: 10% 0 0 18.5%;
+    margin: 7% 0 0 18.5%;
   }
   
   .registration p{
@@ -1040,7 +1036,8 @@ footer .contacts{
     width: 80%;
     font-size: 4vw;
     line-height: 150%;
-    margin-bottom: 5%;
+    margin-bottom: 20%;
+    margin-top: 0;
   }
 
   .registration_fields{
@@ -1056,7 +1053,7 @@ footer .contacts{
   }
 
   #Page_5 .startProject{
-    margin-top: 10%;  
+    margin-top: 15%;  
     height: 10%;
     font-size: 3.5vw;
   }
@@ -1109,28 +1106,20 @@ footer .contacts{
   }
 
   #mob-menu-page .social_media{
-    width: 100%;
-    display: flex;
     position: relative;
-    flex-direction: row;
-    align-content: space-around;
-    margin-left: 3%;
-    margin-bottom: 5%;
+    width: 55%;
     height: 15%;
-  }
-
-  #mob-menu-page .social_media{
-    width: 80%;
     clear: both;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0 15%;
+    margin: 10% 22.5% 0 22.5%;
   }
 
   #mob-menu-page .social_media a{
-    width: 20%;
-    height: 75%;
+    width: 75px;
+    height: 75px;
+    opacity: 1;
     margin-left: 0;
     /* margin-right: 5%; */
   }
@@ -1163,7 +1152,6 @@ footer .contacts{
   
   .menu_form ul{
     height: 35%;
-    margin-bottom: 15%;
     clear: both;
   }
   
@@ -1182,9 +1170,106 @@ footer .contacts{
     margin-top: 0;
     font-size: 3.5vw;
   }
+}
 
- 
+
+/* @media screen and (max-width: 480px){ */
+@media screen and (max-width: 600px){
   
+  #mob-bg{
+    margin-left: 25%;
+    margin-bottom: -10%;
+  }
+  
+  .logo{
+    margin-top: 10%;
+    /* width: 88px;
+    height: 42px; */
+    width: 18.5%;
+    height: 5%;
+  }
+
+  .landing_text h1{
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+
+  .landing_text p{
+    margin-top: 0;
+    margin-bottom: 10%;
+  }
+
+  #Page_1 p{
+    margin-bottom: 0;
+  }
+
+  #Page_2 article{
+    margin-top: 15%;
+  }
+
+  #mob-bg-second-page-2{
+    height: 70%;
+    left: -105%;
+  }
+
+  #Page_2 h1{
+    margin-bottom: 7%; 
+  }
+  
+  #Page_2 p, #Page_3 p{
+    font-size: 3.5vw;
+  }
+
+
+  #Page_3 h1{
+    padding-top: 15%;
+    padding-bottom: 20%;
+  }
+
+  #Page_3 .swiper-slide p{
+    margin: 15% auto;
+    font-size: 3.7vw;
+  }
+  
+  #employee-name{
+    top: 67%;
+  }
+
+  #employee-info{
+    top: 72%;
+  }
+  
+
+  .mySlides img{
+    object-fit: cover;
+  }
+
+  .registration{
+    margin: 10% 0 0 18.5%;
+  }
+  
+  .registration p{
+    margin-bottom: 5%;
+  }
+
+  #Page_5 .startProject{
+    margin-top: 15%;  
+  }
+  
+  #mob-menu-page .social_media{
+    margin: 0 15%;
+  }
+
+  #mob-menu-page .social_media a{
+    width: 45px;
+    height: 45px;
+    margin-left: 0;
+    /* margin-right: 5%; */
+  }
+  
+  .menu_form ul{
+    margin-bottom: 15%;
+  }
 }
 
 
