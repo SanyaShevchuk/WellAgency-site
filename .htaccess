@@ -1,0 +1,23 @@
+# BEGIN Redirect
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} .
+RewriteCond %{HTTP_HOST} ^wellagency\.hostenko\.com$ [NC]
+RewriteRule (.*) http://wellwell.agency/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} .
+RewriteCond %{HTTP_HOST} ^www\.wellagency\.hostenko\.com$ [NC]
+RewriteRule (.*) http://www.wellwell.agency/$1 [R=301,L]
+# END Redirect
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
+
+# END WordPress
