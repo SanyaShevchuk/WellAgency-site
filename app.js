@@ -3,6 +3,16 @@ let dots = document.getElementsByClassName("dot");
 let current=3;
 let doAuto = true;
 
+document.querySelector(".menu_form .startProject").onclick = function(){
+  window.location.href='#Page_5';
+  document.querySelector("#menu_page").style.display = "none";
+}
+
+document.querySelector("#mob-menu-page .startProject").onclick = function(){
+  window.location.href='#Page_5';
+  document.querySelector("#mob-menu-page").style.display = "none";
+}
+
 function plusSlides(n){
   stopAutoAnimation();
   showSlides(n);
