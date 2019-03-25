@@ -4,12 +4,12 @@ let current=3;
 let doAuto = true;
 
 document.querySelector(".menu_form .startProject").onclick = function(){
-  window.location.href='#Page_5';
+  window.location.href='#Contacts';
   document.querySelector("#menu_page").style.display = "none";
 }
 
 document.querySelector("#mob-menu-page .startProject").onclick = function(){
-  window.location.href='#Page_5';
+  window.location.href='#Contacts';
   document.querySelector("#mob-menu-page").style.display = "none";
 }
 
@@ -69,7 +69,7 @@ function changeSlide(){
   }
 
   let images = document.querySelector('.images');
-  let leffy = 
+  let leffy =
     parseInt(window.getComputedStyle(images)
       .getPropertyValue('left'));
   switch(current){
@@ -79,7 +79,7 @@ function changeSlide(){
     case 3: leffy = -100;break;
     case 4: leffy = -20;break;
   }
- 
+
   images.style.marginLeft = leffy+"%";
   slides[current].style.display = "block";
   dots[current].className += " active";

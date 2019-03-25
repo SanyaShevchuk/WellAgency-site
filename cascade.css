@@ -222,7 +222,7 @@ img{
 
 
 /******Beginning Page 2******/
-#Page_2{
+#HowDoWeWork{
   position: relative;
   background:
     /* url('files/Page2/Wawe1.png') no-repeat 0px 0px, */
@@ -248,11 +248,11 @@ img{
   margin: 3% 0 0 4.2%;
 }
 
-#Page_2 article{
+#HowDoWeWork article{
   margin: 5% 0 0 10.7%;
 }
 
-#Page_2 h1{
+#HowDoWeWork h1{
   /* font-size: 53.868px; */
   position: relative;
   font-size: 4vw;
@@ -264,7 +264,7 @@ img{
   margin: 0;
 }
 
-#Page_2 p{
+#HowDoWeWork p{
   width: 47.4%;
   margin-top: 1.5%;
   /* font-size: 14px; */
@@ -312,11 +312,11 @@ img{
   opacity: 0.7;
 }
 
-#Page_2 .language, #Page_4 .language{
+#HowDoWeWork .language, #WhoWe .language{
   color: white;
 }
 
-#Page_2 #russian, #Page_4 #russian{
+#HowDoWeWork #russian, #WhoWe #russian{
   border-color: white;
 }
 
@@ -327,24 +327,24 @@ img{
 
 
 /******Beginning Page 3******/
-#Page_3{
+#Service{
   position: relative;
   background: linear-gradient(to right, #d3c6da, #f8cad5);
   width: 100%;
   height: 100%;
 }
 
-#Page_3 .swiper-container{
+#Service .swiper-container{
   display: none;
 }
 
-#Page_3 article{
+#Service article{
   margin: 0 0 0 10.7%;
   position: relative;
   color: black;
 }
 
-#Page_3 h1{
+#Service h1{
   /* font-size: 53.868px; */
   font-size: 4vw;
   font-family: "UltimaPro";
@@ -355,7 +355,7 @@ img{
   margin: 3% 0 1.7% 0;
 }
 
-#Page_3 p{
+#Service p{
   width: 52%;
   margin-top: 3.5%;
   /* font-size: 14px; */
@@ -369,12 +369,12 @@ img{
   margin-bottom: 0;
 }
 
-#Page_3 .service_item, .mob-service-item{
+#Service .service_item, .mob-service-item{
   height: 45%;
   margin-left: 3.7%;
 }
 
-#Page_3 .service_item ul, #Page_3 .mob-service-item {
+#Service .service_item ul, #Service .mob-service-item {
   display: flex;
   flex: row;
   flex-wrap: wrap;
@@ -383,14 +383,14 @@ img{
   margin: 0;
 }
 
-#Page_3 .service_item li,
-#Page_3 .mob-service-item li{
+#Service .service_item li,
+#Service .mob-service-item li{
   width: 16.3%;
   margin-top: 3%;
   margin-left: 7.4%;
 }
 
-#Page_3 .service_item a,
+#Service .service_item a,
 .mob-service-item a{
   /* font-size: 29px; */
   font-size: 2vw;
@@ -405,13 +405,13 @@ img{
 /******End Page 3******/
 
 /******Beginning Page 4******/
-#Page_4{
+#WhoWe{
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.Page_4 .logo, .Page .menu_icon{
+.WhoWe .logo, .Page .menu_icon{
   position: absolute;
   z-index: 10;
 }
@@ -423,13 +423,13 @@ top: 0;
 right: 0;
 bottom: 0;
 left: 0;
-background: 
+background:
       repeating-linear-gradient(to right,
       black 0,
       black 60%,
       transparent 60%,
       transparent 80%);
-opacity: .6; 
+opacity: .6;
 }
 
 
@@ -443,7 +443,7 @@ opacity: .6;
   height: 100%;
   /* animation: roll 25s steps(5,end) infinite; */
   font-size: 0;
-  
+
 }
 .images img{
   /* width: 20%; */
@@ -451,12 +451,12 @@ opacity: .6;
   height: 100%;
 }
 section {
-  position: absolute; 
+  position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden; 
+  overflow: hidden;
   z-index: -11;
 }
 
@@ -604,7 +604,7 @@ section {
 /******End Page 4******/
 
 /******Beginning Page 5******/
-#Page_5{
+#Contacts{
   position: relative;
   background: linear-gradient(to right, #d3c6da, #f8cad5);
   width: 100%;
@@ -649,7 +649,7 @@ footer{
   width: 100%;
   /* height: 55vh; */
   height: 55%;
-  max-height: 400px;
+  max-height: 450px;
   background: linear-gradient(to right, #212121, #3b3b3b);
 }
 
@@ -673,7 +673,7 @@ footer ul li a{
 }
 
 footer .contacts{
-  position: relative; 
+  position: relative;
   width: 15%;
   bottom: 20%;
   float: right;
@@ -775,12 +775,12 @@ footer .contacts{
 /******media queries******/
 
 @media screen and (min-height:769px) {
-  
+
   .landing_text p{
     font-size: 1.5vw;
   }
 
-  #Page_2 p{
+  #HowDoWeWork p{
     margin-top: 2%;
     font-size: 1.5vw;
   }
@@ -791,7 +791,7 @@ footer .contacts{
     width: 200px;
     font-size: 1.3vw;
   }
-  
+
   .registration{
     height: 75%;
   }
@@ -801,7 +801,7 @@ footer .contacts{
     line-height: 1.174;
     margin-bottom: 5%;
   }
-  
+
   .registration_fields input{
     width: 35%;
     margin-top: 5%;
@@ -828,7 +828,7 @@ footer .contacts{
     margin-left: 35%;
     margin-bottom: -10%;
   }
-  
+
   #Page_1 .logo{
     margin-top: 10%;
   }
@@ -870,7 +870,7 @@ footer .contacts{
     display: block;
   }
 
-  #Page_2 article{
+  #HowDoWeWork article{
     height: 40%;
     margin-top: 10%;
   }
@@ -883,7 +883,7 @@ footer .contacts{
     display: block;
   }
 
-  #Page_1, #Page_2{
+  #Page_1, #HowDoWeWork{
     overflow: hidden;
   }
 
@@ -904,15 +904,15 @@ footer .contacts{
   }
 
 
-  #Page_2 h1{
+  #HowDoWeWork h1{
     font-size: 10vw;
-    width: 80%; 
+    width: 80%;
     height: 40%;
-    line-height: 120%; 
-    margin-bottom: 15%; 
+    line-height: 120%;
+    margin-bottom: 15%;
   }
-  
-  #Page_2 p, #Page_3 p{
+
+  #HowDoWeWork p, #Service p{
     width: 80%;
     height: 60%;
     font-size: 3.2vw;
@@ -921,30 +921,30 @@ footer .contacts{
     opacity: 1;
   }
 
-  #Page_3 article{
+  #Service article{
     height: 20%;
     margin-top: 0%;
     margin-bottom: 0%;
   }
 
-  #Page_3 h1{
+  #Service h1{
     font-size: 10vw;
-    width: 80%; 
+    width: 80%;
     height: 40%;
-    line-height: 120%; 
+    line-height: 120%;
     padding-top: 10%;
     padding-bottom: 10%;
   }
 
-  #Page_3 .service_item, #Page_3 .service p{
+  #Service .service_item, #Service .service p{
     display: none;
   }
- 
-  #Page_3 .mob-service{
+
+  #Service .mob-service{
     margin-top: 15%;
   }
 
-  #Page_3 .swiper-container{
+  #Service .swiper-container{
     display: block;
   }
 
@@ -953,43 +953,43 @@ footer .contacts{
     height: 55%;
   }
 
-  #Page_3 .mob-service-item{
+  #Service .mob-service-item{
     height: 100%;
     margin: 0 14%;
   }
-  
-  #Page_3 .mob-service-item li{
+
+  #Service .mob-service-item li{
     width: 35%;
     margin-top: 5%;
     margin-left: 0;
     margin-right: 0;
   }
 
-  #Page_3 .mob-service-item li:nth-child(2n+1){
+  #Service .mob-service-item li:nth-child(2n+1){
     margin-right: 30%;
   }
-  
-  #Page_3 .mob-service-item a{
+
+  #Service .mob-service-item a{
     font-size: 4vw;
   }
 
-  #Page_3 .swiper-slide p{
+  #Service .swiper-slide p{
     width: 60%;
     height: 70%;
     margin: 10% auto;
     font-size: 3.5vw;
   }
 
-  #Page_4 .fr-trust-wrapper, section:after,
+  #WhoWe .fr-trust-wrapper, section:after,
   .social_media, .languages{
     display: none;
   }
 
-  #Page_4 .mySlides, #Page_4 .mySlides img{
+  #WhoWe .mySlides, #WhoWe .mySlides img{
     display: block;
   }
 
-  #Page_4 .mySlides h1{
+  #WhoWe .mySlides h1{
     display: block;
   }
 
@@ -1013,7 +1013,7 @@ footer .contacts{
     font-weight: 700;
     line-height: 100%;
   }
-  
+
   .slideshow-container{
     width: 100%;
     left: 0%;
@@ -1072,7 +1072,7 @@ footer .contacts{
      border-radius:50%;
   }
 
-  #Page_4 .logo{
+  #WhoWe .logo{
     position: absolute;
     z-index: 25;
   }
@@ -1081,7 +1081,7 @@ footer .contacts{
     height: 70%;
     margin: 7% 0 0 18.5%;
   }
-  
+
   .registration p{
     height: 20%;
     width: 80%;
@@ -1094,7 +1094,7 @@ footer .contacts{
   .registration_fields{
     height: 50%;
   }
-  
+
   .registration_fields input{
     width: 90%;
     height: 8%;
@@ -1103,8 +1103,8 @@ footer .contacts{
     border-bottom: 1px solid black;
   }
 
-  #Page_5 .startProject{
-    margin-top: 15%;  
+  #Contacts .startProject{
+    margin-top: 15%;
     height: 10%;
     font-size: 3.5vw;
   }
@@ -1112,7 +1112,7 @@ footer .contacts{
   .registration_fields input:nth-child(4){
     display: none;
   }
-  
+
   #projectDescription{
     height: 45%;
     display: block;
@@ -1192,7 +1192,7 @@ footer .contacts{
     width: 30%;
     font-size: 3vw;
   }
-  
+
   .menu_form h1{
     height: 10%;
     font-size: 7vw;
@@ -1200,17 +1200,17 @@ footer .contacts{
     margin-top: 10%;
     font-weight: 900;
   }
-  
+
   .menu_form ul{
     height: 35%;
     clear: both;
   }
-  
+
   .menu_form li{
     height: 20%;
     margin-bottom: 15%;
   }
-  
+
   .menu_form a{
     font-size: 4vw;
     font-weight: 100;
@@ -1226,12 +1226,12 @@ footer .contacts{
 
 /* @media screen and (max-width: 480px){ */
 @media screen and (max-width: 600px) and (orientation: portrait){
-  
+
   #mob-bg{
     margin-left: 25%;
     margin-bottom: -10%;
   }
-  
+
   .logo{
     margin-top: 10%;
     /* width: 88px;
@@ -1254,7 +1254,7 @@ footer .contacts{
     margin-bottom: 0;
   }
 
-  #Page_2 article{
+  #HowDoWeWork article{
     margin-top: 15%;
   }
 
@@ -1263,25 +1263,25 @@ footer .contacts{
     left: -105%;
   }
 
-  #Page_2 h1{
-    margin-bottom: 7%; 
+  #HowDoWeWork h1{
+    margin-bottom: 7%;
   }
-  
-  #Page_2 p, #Page_3 p{
+
+  #HowDoWeWork p, #Service p{
     font-size: 3.5vw;
   }
 
 
-  #Page_3 h1{
+  #Service h1{
     padding-top: 15%;
     padding-bottom: 20%;
   }
 
-  #Page_3 .swiper-slide p{
+  #Service .swiper-slide p{
     margin: 15% auto;
     font-size: 3.7vw;
   }
-  
+
   #employee-name{
     top: 67%;
   }
@@ -1289,7 +1289,7 @@ footer .contacts{
   #employee-info{
     top: 72%;
   }
-  
+
 
   .mySlides img{
     object-fit: cover;
@@ -1298,15 +1298,15 @@ footer .contacts{
   .registration{
     margin: 10% 0 0 18.5%;
   }
-  
+
   .registration p{
     margin-bottom: 5%;
   }
 
-  #Page_5 .startProject{
-    margin-top: 15%;  
+  #Contacts .startProject{
+    margin-top: 15%;
   }
-  
+
   #mob-menu-page .social_media{
     margin: 0 15%;
   }
@@ -1317,7 +1317,7 @@ footer .contacts{
     margin-left: 0;
     /* margin-right: 5%; */
   }
-  
+
   .menu_form ul{
     margin-bottom: 15%;
   }
@@ -1325,7 +1325,7 @@ footer .contacts{
 
 
 @media screen and (max-height: 768px) and (orientation:landscape){
-  
+
   .menu_icon{
     width: 3.5%;
   }
@@ -1333,7 +1333,7 @@ footer .contacts{
   .logo{
     width: 6%;
   }
-  
+
   .menu li{
     font-size: 1.5vw;
   }
@@ -1347,24 +1347,24 @@ footer .contacts{
     z-index: 11;
   }
 
-  #Page_2 article{
+  #HowDoWeWork article{
     margin-top: 3%;
   }
 
-  #Page_2 h1{
+  #HowDoWeWork h1{
     font-size: 3.5vw;
   }
 
-  #Page_2 p{
+  #HowDoWeWork p{
     font-size: 1.1vw;
   }
 
-  #Page_3 p{
+  #Service p{
     width: 73%;
     font-size: 1.4vw;
   }
 
-  #Page_3 .service_item a{
+  #Service .service_item a{
     font-size: 1.8vw;
   }
 
@@ -1377,31 +1377,31 @@ footer .contacts{
     font-size: 1.7vw;
     margin-bottom: 4%;
   }
-  
+
   footer{
     height: 55%;
   }
 
   #menu_page{
-    right: 0%; 
+    right: 0%;
   }
-  
+
   .close{
     width: 35%;
     font-size: 1.2vw;
   }
-  
+
   .close span{
     margin-right: 15%;
   }
-  
+
   .menu_form a{
     font-size: 1.4vw;
   }
 }
 
 @media screen and (max-height: 480px) and (orientation:landscape){
- 
+
   .menu_icon{
     margin-left: 0;
     right: 4.9%;
@@ -1418,7 +1418,7 @@ footer .contacts{
   .menu li{
     font-size: 1.4vw;
   }
-  
+
   .landing_text {
     margin: 3% 0px 0px 18%;
   }
@@ -1426,14 +1426,14 @@ footer .contacts{
   .landing_text p{
     font-size: 1.4vw;
   }
-  
+
   .startProject{
     margin-top: 6%;
     height: 30px;
     width: 135px;
     font-size: 1.2vw;
   }
-  
+
   .languages{
     bottom: 6.5%;
   }
@@ -1456,27 +1456,27 @@ footer .contacts{
   .social_media img{
     width: 30px;
   }
-  
-  #Page_2 p{
+
+  #HowDoWeWork p{
     margin-top: 2.5%;
     font-size: 1.5vw;
   }
-  
+
   #month{
     display: none;
   }
 
-  #Page_3 p{
+  #Service p{
     width: 73%;
     margin-top: 3.5%;
     font-size: 1.4vw;
   }
 
-  #Page_3 .service_item li{
+  #Service .service_item li{
     margin-top: 2.7%;
   }
-  
-  #Page_3 .service_item a{
+
+  #Service .service_item a{
     font-size: 1.8vw;
   }
 
@@ -1513,7 +1513,7 @@ footer .contacts{
 
   .registration_fields input{
     width: 33%;
-    
+
     margin-top: 3.8%;
     font-size: 1.5vw;
   }
@@ -1546,30 +1546,30 @@ footer .contacts{
 }
 
 /* @media only screen and (min-width: 480px) {
-  Здесь стили более разумных, но все еще мобильных устройств. Android, iPhone  и так далее. 
+  Здесь стили более разумных, но все еще мобильных устройств. Android, iPhone  и так далее.
   }
-   
+
 @media only screen and (min-width: 768px) {
   Планшеты в режиме portrait.
   }
-   
+
 @media only screen and (min-width: 992px) {
   Планшеты в режиме landscape, нетбуки, ноутбуки, десктоп.
   }
-   
+
 @media only screen and (min-width: 1382px) {
    Десктоп с большими разрешениями, телевизоры.
 
 Landscape phones and down
 @media (max-width: 480px) { ... }
 
- Landscape phone to portrait tablet 
+ Landscape phone to portrait tablet
 @media (max-width: 767px) { ... }
 
- Portrait tablet to landscape and desktop 
+ Portrait tablet to landscape and desktop
 @media (min-width: 768px) and (max-width: 979px) { ... }
 
- Large desktop 
+ Large desktop
 @media (min-width: 1200px) { ... }
 
    } */
