@@ -85,7 +85,7 @@ for(let i=0; i < english.length; i++){
             if(i==3) inputs[3].placeholder = "Project Description";
         }
 
-        let startButtons = document.querySelectorAll(".startProject");
+        let startButtons = document.querySelectorAll(".start_project_btn");
 
         for(let i=0; i < startButtons.length; i++){
             startButtons[i].textContent = "Start Project";
@@ -204,7 +204,7 @@ for(let i=0; i < ukrainian.length; i++){
             if(i==3) inputs[3].placeholder = "Опис проекту";
         }
 
-        let startButtons = document.querySelectorAll(".startProject");
+        let startButtons = document.querySelectorAll(".start_project_btn");
 
         for(let i=0; i < startButtons.length; i++){
             startButtons[i].textContent = "Почати проект";
@@ -326,7 +326,7 @@ for(let i=0; i < russian.length; i++){
             if(i==3) inputs[3].placeholder = "Описание проекта";
         }
 
-        let startButtons = document.querySelectorAll(".startProject");
+        let startButtons = document.querySelectorAll(".start_project_btn");
 
         for(let i=0; i < startButtons.length; i++){
             startButtons[i].textContent = "Начать проект";

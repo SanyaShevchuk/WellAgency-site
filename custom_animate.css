@@ -1,0 +1,364 @@
+.landing_text h1 {
+    animation-delay: 0.5s;
+}
+.landing_text p {
+    animation-delay: 1s;
+}
+.service h1 {
+    animation-delay: 0.2s;
+}
+.service p {
+    animation-delay: 0.5s;
+}
+
+.service_item li {
+    animation-delay: 1s;
+}
+.service_item li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.service_item li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.service_item li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.service_item li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.service_item li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.service_item li:nth-child(6) {
+    animation-delay: 0.6s;
+}
+.service_item li:nth-child(7) {
+    animation-delay: 0.7s;
+}
+.service_item li:nth-child(8) {
+    animation-delay: 0.8s;
+}
+.service_item li:nth-child(9) {
+    animation-delay: 0.8s;
+}
+.service_item li:nth-child(10) {
+    animation-delay: 0.8s;
+}
+.input_lable {
+    animation-delay: 0.8s;
+}
+#Service .service_item a {
+    transition: all .5s ease;
+}
+#Service .service_item a:hover {
+    font-size: 2.1vw;
+}
+.slider_description {
+    animation-delay: 0.6s;
+}
+.box_input {
+    position: relative;
+}
+.box_input:nth-child(1) {
+    animation-delay: 0.2s;
+    animation-duration: 2s;
+}
+.box_input:nth-child(2) {
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+
+}
+.box_input:nth-child(3) {
+    animation-delay: 0.9s;
+    animation-duration: 2s;
+
+}
+.box_input:nth-child(4) {
+    animation-delay: 1.2s;
+    animation-duration: 2s;
+
+}
+.input_lable:nth-child(1) {
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+
+}
+.input_lable:nth-child(2) {
+    animation-delay: 0.9s;
+    animation-duration: 2s;
+
+}
+.input_lable:nth-child(3) {
+    animation-delay: 1.6s;
+    animation-duration: 2s;
+
+}
+.input_lable:nth-child(4) {
+    animation-delay: 2.7s;
+    animation-duration: 2s;
+
+}
+
+.box_input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*padding-top: 10px;*/
+    transition: all .5s ease;
+    pointer-events: none;
+}
+.box_input input:focus ~ label,
+.box_input input:valid ~ label
+{
+    /*outline: 1px solid orange;*/
+    margin-top: -30px;
+    font-size: 14px;
+    /*color: white;*/
+}
+.registration_fields {
+    overflow: hidden;
+}
+.startProject {
+    overflow: hidden;
+}
+.btn_and_grad {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.btn_and_grad .startProject {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 0px;
+}
+
+.gradient {
+    width: 30px;
+    height: 300px;
+    left: -60px;
+    top: -29px;
+    z-index: 1;
+    position: relative;
+    background: rgba(34,34,34,0.92);
+    background: -moz-linear-gradient(-45deg, rgba(34,34,34,0.92) 0%, rgba(128,128,128,0.96) 49%, rgba(34,34,34,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(34,34,34,0.92)), color-stop(49%, rgba(128,128,128,0.96)), color-stop(100%, rgba(34,34,34,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(34,34,34,0.92) 0%, rgba(128,128,128,0.96) 49%, rgba(34,34,34,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(34,34,34,0.92) 0%, rgba(128,128,128,0.96) 49%, rgba(34,34,34,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(34,34,34,0.92) 0%, rgba(128,128,128,0.96) 49%, rgba(34,34,34,1) 100%);
+    background: linear-gradient(135deg, rgba(34,34,34,0.92) 0%, rgba(128,128,128,0.96) 49%, rgba(34,34,34,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#222222', GradientType=1 );
+    transform: rotate(30deg);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.btn_and_grad:hover .gradient {
+    opacity: 1;
+    left: 100px;
+}
+.btn_and_grad span {
+    z-index: 5;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3vw;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+#Page_1 article .startProject {
+    z-index: 0;
+}
+.landing_text .btn_and_grad {
+    margin-top: 60px;
+    animation-delay: 1.5s;
+
+}
+.emblem {
+    margin: 20px auto;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    font-weight: bold;
+    color: black;
+    animation: spinZ 20s linear infinite;
+    text-align: center;
+}
+.emblem span {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-transform: uppercase;
+    font-size: 1vh;
+    transition: all .5s cubic-bezier(0,0,0,1);
+}
+.logo_block {
+    width: 200px;
+    height: 200px;
+    /*border: 1px solid red;*/
+    position: absolute;
+}
+.logo_block .logo {
+    float: left;
+    width: 88px;
+    height: 42px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0px !important;
+    transform: translate(-50%, -50%);
+}
+.custom-btn {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+.registration_fields input {
+    border-bottom: 2px solid black;
+}
+.btn-6 {
+    width: 45px;
+    height: 50px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    color: white;
+    margin-top: 7px;
+    overflow: hidden;
+}
+#Service .btn-6 {
+    color: black;
+}
+#Service .btn-6:before,
+#Service .btn-6:after {
+    background: black;
+}
+#Service .btn-6 span:before,
+#Service .btn-6 span:after {
+    background: black;
+}
+#Contacts .btn-6 {
+    color: black;
+}
+#Contacts .btn-6:before,
+#Contacts .btn-6:after {
+    background: black;
+}
+#Contacts .btn-6 span:before,
+#Contacts .btn-6 span:after {
+    background: black;
+}
+.btn-6 img {
+    top: -9.5%;
+    margin-left: -10px;
+
+}
+.btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn-6:before,
+.btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 2px;
+    background: white;
+}
+.btn-6:before {
+    right: 0;
+    top: 0;
+    transition: all 0.1s 0.3s ease ;
+}
+.btn-6:after {
+    left: 0;
+    bottom: 0;
+    transition: all 0.1s  ease;
+}
+.btn-6:hover:before {
+    transition: all 0.1s 0.3s ease;
+    height: 100%;
+}
+.btn-6:hover:after {
+    transition: all 0.1s 0.4s ease;
+    height: 100%;
+}
+.btn-6 span:before,
+.btn-6 span:after {
+    position: absolute;
+    content: "";
+    background: white;
+}
+.btn-6 span:before {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 0.1s 0.3s ease;
+}
+.btn-6 span:after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+}
+.btn-6 span:hover:before {
+    width: 100%;
+}
+.wrapper_big_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+}
+.well_big_text {
+    letter-spacing: 65px;
+    font-size: 270px;
+    margin: 0px !important;
+    color: rgba(187, 152, 161, 0.1);
+    animation-delay: 2s;
+
+}
+@keyframes spinZ {
+    0% {
+        transform: rotateZ(360deg);
+        letter-spacing: 1px;
+    }
+    100% {
+        transform: rotateZ(0deg);
+        letter-spacing: 2px;
+    }
+}
+/*@media screen and (max-width: 1500px){*/
+    /*.emblem {*/
+        /*left: 65px;*/
+        /*top: 1vh;*/
+    /*}*/
+/*}*/
+@media screen and (max-width: 1050px){
+    .emblem {
+        left: 45px;
+        top: 2vh;
+        width: 11vh;
+        height: 14vh;
+    }
+}
